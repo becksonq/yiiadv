@@ -5,6 +5,18 @@ use yii\rest\Controller;
 
 class TestRestController extends Controller
 {
+    public function behaviors()
+    {
+        $behaviors = parent::behaviors();
+        $behaviors['verbs'] = [
+            'class' => \yii\filters\VerbFilter::className(),
+            'actions' => [
+                'index' => ['get'],
+            ],
+        ];
+        return $behaviors;
+    }
+
     private function dataList()
     {
         return [
@@ -18,4 +30,6 @@ class TestRestController extends Controller
     {
         return $this->dataList();
     }
+
+
 }
