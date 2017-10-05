@@ -595,3 +595,507 @@ Stack trace:
     'argv' => []
     'argc' => 0
 ]
+2017-10-05 19:44:51 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#1 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2017-10-05 19:44:50 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_X_COMPRESS' => 'null'
+    'PATH' => 'h:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;h:\\openserver\\modules\\php\\PHP-7.0-x64;h:\\openserver\\modules\\imagemagick;h:\\openserver\\modules\\wget\\bin;h:\\openserver\\modules\\git;h:\\openserver\\modules\\git\\bin;h:\\openserver\\modules\\git\\mingw\\bin;h:\\openserver\\modules\\git\\cmd;h:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '15024'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507221890.948
+    'REQUEST_TIME' => 1507221890
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 19:47:03 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 10 in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\rest\Action.php:103
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\rest\ViewAction.php(29): yii\rest\Action->findModel('10')
+#1 [internal function]: yii\rest\ViewAction->run('10')
+#2 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\Action->runWithParams(Array)
+#4 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('view', Array)
+#5 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('rooms/view', Array)
+#6 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#8 {main}
+2017-10-05 19:47:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '10'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_X_COMPRESS' => 'null'
+    'PATH' => 'h:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;h:\\openserver\\modules\\php\\PHP-7.0-x64;h:\\openserver\\modules\\imagemagick;h:\\openserver\\modules\\wget\\bin;h:\\openserver\\modules\\git;h:\\openserver\\modules\\git\\bin;h:\\openserver\\modules\\git\\mingw\\bin;h:\\openserver\\modules\\git\\cmd;h:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '15051'
+    'REDIRECT_URL' => '/rooms/view'
+    'REDIRECT_QUERY_STRING' => 'id=10'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=10'
+    'REQUEST_URI' => '/rooms/view?id=10'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507222022.982
+    'REQUEST_TIME' => 1507222022
+    'argv' => [
+        0 => 'id=10'
+    ]
+    'argc' => 1
+]
+2017-10-06 00:05:49 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: reservations/index-withrooms in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index-withrooms', Array)
+#1 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('reservations/in...', Array)
+#2 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2017-10-06 00:05:49 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_X_COMPRESS' => 'null'
+    'PATH' => 'h:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;h:\\openserver\\modules\\php\\PHP-7.0-x64;h:\\openserver\\modules\\imagemagick;h:\\openserver\\modules\\wget\\bin;h:\\openserver\\modules\\git;h:\\openserver\\modules\\git\\bin;h:\\openserver\\modules\\git\\mingw\\bin;h:\\openserver\\modules\\git\\cmd;h:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '15700'
+    'REDIRECT_URL' => '/reservations/index-withrooms'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/reservations/index-withrooms'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507237549.899
+    'REQUEST_TIME' => 1507237549
+    'argv' => []
+    'argc' => 0
+]
+2017-10-06 00:06:44 [127.0.0.1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#7 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#8 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#9 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('customers/index', Array)
+#10 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#12 {main}
+2017-10-06 00:06:43 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_X_COMPRESS' => 'null'
+    'PATH' => 'h:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;h:\\openserver\\modules\\php\\PHP-7.0-x64;h:\\openserver\\modules\\imagemagick;h:\\openserver\\modules\\wget\\bin;h:\\openserver\\modules\\git;h:\\openserver\\modules\\git\\bin;h:\\openserver\\modules\\git\\mingw\\bin;h:\\openserver\\modules\\git\\cmd;h:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '15709'
+    'REDIRECT_URL' => '/customers/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/customers/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507237603.907
+    'REQUEST_TIME' => 1507237603
+    'argv' => []
+    'argc' => 0
+]
+2017-10-06 00:07:02 [127.0.0.1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\base\InlineAction))
+#2 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('access-token-by...', Array)
+#9 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('customers/acces...', Array)
+#10 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#12 {main}
+2017-10-06 00:07:02 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_X_COMPRESS' => 'null'
+    'PATH' => 'h:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;h:\\openserver\\modules\\php\\PHP-7.0-x64;h:\\openserver\\modules\\imagemagick;h:\\openserver\\modules\\wget\\bin;h:\\openserver\\modules\\git;h:\\openserver\\modules\\git\\bin;h:\\openserver\\modules\\git\\mingw\\bin;h:\\openserver\\modules\\git\\cmd;h:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '15713'
+    'REDIRECT_URL' => '/customers/access-token-by-user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/customers/access-token-by-user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507237622.265
+    'REQUEST_TIME' => 1507237622
+    'argv' => []
+    'argc' => 0
+]
+2017-10-06 00:07:08 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause' in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php:915
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(915): PDOStatement->execute()
+#1 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#3 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one(NULL)
+#4 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 H:\OpenServer\domains\yiiadv\common\models\User.php(83): yii\db\BaseActiveRecord::findOne(Array)
+#6 H:\OpenServer\domains\yiiadv\api\controllers\CustomersController.php(32): common\models\User::findByUsername('foo')
+#7 [internal function]: api\controllers\CustomersController->api\controllers\{closure}('foo', '')
+#8 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\HttpBasicAuth.php(92): call_user_func(Object(Closure), 'foo', '')
+#9 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpBasicAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#10 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#11 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\base\InlineAction))
+#12 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\base\InlineAction))
+#13 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#14 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#15 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#16 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#17 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#18 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('access-token-by...', Array)
+#19 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('customers/acces...', Array)
+#20 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+The SQL being executed was: SELECT * FROM `user` WHERE (`username`='foo') AND (`status`=10) in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(930): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#3 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one(NULL)
+#4 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 H:\OpenServer\domains\yiiadv\common\models\User.php(83): yii\db\BaseActiveRecord::findOne(Array)
+#6 H:\OpenServer\domains\yiiadv\api\controllers\CustomersController.php(32): common\models\User::findByUsername('foo')
+#7 [internal function]: api\controllers\CustomersController->api\controllers\{closure}('foo', '')
+#8 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\HttpBasicAuth.php(92): call_user_func(Object(Closure), 'foo', '')
+#9 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpBasicAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#10 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#11 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\base\InlineAction))
+#12 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\base\InlineAction))
+#13 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#14 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#15 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#16 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#17 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#18 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('access-token-by...', Array)
+#19 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('customers/acces...', Array)
+#20 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'status' in 'where clause'
+)
+
+2017-10-06 00:07:08 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_X_COMPRESS' => 'null'
+    'PATH' => 'h:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;h:\\openserver\\modules\\php\\PHP-7.0-x64;h:\\openserver\\modules\\imagemagick;h:\\openserver\\modules\\wget\\bin;h:\\openserver\\modules\\git;h:\\openserver\\modules\\git\\bin;h:\\openserver\\modules\\git\\mingw\\bin;h:\\openserver\\modules\\git\\cmd;h:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '15714'
+    'REDIRECT_URL' => '/customers/access-token-by-user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/customers/access-token-by-user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'PHP_AUTH_USER' => 'foo'
+    'PHP_AUTH_PW' => ''
+    'REQUEST_TIME_FLOAT' => 1507237628.583
+    'REQUEST_TIME' => 1507237628
+    'argv' => []
+    'argc' => 0
+]
+2017-10-06 00:07:29 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause' in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php:915
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(915): PDOStatement->execute()
+#1 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#3 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one(NULL)
+#4 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 H:\OpenServer\domains\yiiadv\common\models\User.php(83): yii\db\BaseActiveRecord::findOne(Array)
+#6 H:\OpenServer\domains\yiiadv\api\controllers\CustomersController.php(32): common\models\User::findByUsername('foo')
+#7 [internal function]: api\controllers\CustomersController->api\controllers\{closure}('foo', '')
+#8 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\HttpBasicAuth.php(92): call_user_func(Object(Closure), 'foo', '')
+#9 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpBasicAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#10 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#11 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#12 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#13 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#14 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#15 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#16 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#17 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#18 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#19 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('customers/index', Array)
+#20 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'
+The SQL being executed was: SELECT * FROM `user` WHERE (`username`='foo') AND (`status`=10) in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(930): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#3 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one(NULL)
+#4 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 H:\OpenServer\domains\yiiadv\common\models\User.php(83): yii\db\BaseActiveRecord::findOne(Array)
+#6 H:\OpenServer\domains\yiiadv\api\controllers\CustomersController.php(32): common\models\User::findByUsername('foo')
+#7 [internal function]: api\controllers\CustomersController->api\controllers\{closure}('foo', '')
+#8 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\HttpBasicAuth.php(92): call_user_func(Object(Closure), 'foo', '')
+#9 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpBasicAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#10 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#11 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#12 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#13 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#14 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#15 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#16 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#17 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#18 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#19 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('customers/index', Array)
+#20 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'status' in 'where clause'
+)
+
+2017-10-06 00:07:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'access-token' => ''
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_X_COMPRESS' => 'null'
+    'PATH' => 'h:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;h:\\openserver\\modules\\php\\PHP-7.0-x64;h:\\openserver\\modules\\imagemagick;h:\\openserver\\modules\\wget\\bin;h:\\openserver\\modules\\git;h:\\openserver\\modules\\git\\bin;h:\\openserver\\modules\\git\\mingw\\bin;h:\\openserver\\modules\\git\\cmd;h:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '15722'
+    'REDIRECT_URL' => '/customers/index'
+    'REDIRECT_QUERY_STRING' => 'access-token'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'access-token'
+    'REQUEST_URI' => '/customers/index?access-token'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'PHP_AUTH_USER' => 'foo'
+    'PHP_AUTH_PW' => ''
+    'REQUEST_TIME_FLOAT' => 1507237649.762
+    'REQUEST_TIME' => 1507237649
+    'argv' => [
+        0 => 'access-token'
+    ]
+    'argc' => 1
+]
