@@ -35,11 +35,25 @@ return [
                 ],
             ],
         ],
+        //        'response' => [
+        //            'format' => yii\web\Response::FORMAT_JSON,
+        //            'charset' => 'UTF-8',
+        //            'class' => '\api\components\ApiResponse',
+        //        ],
+        'response'   => [
+            'formatters' => [
+                'rss' => [
+                    'format'  => 'raw',
+                    'charset' => 'UTF-8',
+                    'class'   => '\api\components\RssResponseFormatter',
+                ],
+            ]
+        ],
     ],
     'params'              => $params,
-//    'request' => [
-//        'parsers' => [
-//            'application/json' => 'yii\web\JsonParser',
-//        ]
-//    ],
+    //    'request' => [
+    //        'parsers' => [
+    //            'application/json' => 'yii\web\JsonParser',
+    //        ]
+    //    ],
 ];

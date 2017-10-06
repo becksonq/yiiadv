@@ -1598,3 +1598,279 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2017-10-06 19:54:57 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: reservations/index-inexistent in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index-inexisten...', Array)
+#1 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('reservations/in...', Array)
+#2 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2017-10-06 19:54:57 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'HTTP_X_COMPRESS' => 'null'
+    'PATH' => 'h:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;h:\\openserver\\modules\\php\\PHP-7.0-x64;h:\\openserver\\modules\\imagemagick;h:\\openserver\\modules\\wget\\bin;h:\\openserver\\modules\\git;h:\\openserver\\modules\\git\\bin;h:\\openserver\\modules\\git\\mingw\\bin;h:\\openserver\\modules\\git\\cmd;h:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '21971'
+    'REDIRECT_URL' => '/reservations/index-inexistent'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/reservations/index-inexistent'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507308897.266
+    'REQUEST_TIME' => 1507308897
+    'argv' => []
+    'argc' => 0
+]
+2017-10-06 19:55:30 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: reservations/index-inexistent in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index-inexisten...', Array)
+#1 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('reservations/in...', Array)
+#2 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2017-10-06 19:55:30 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_POSTMAN_TOKEN' => 'db8e2e40-ae94-a7a4-9ba5-6c3541007250'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'PATH' => 'h:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;h:\\openserver\\modules\\php\\PHP-7.0-x64;h:\\openserver\\modules\\imagemagick;h:\\openserver\\modules\\wget\\bin;h:\\openserver\\modules\\git;h:\\openserver\\modules\\git\\bin;h:\\openserver\\modules\\git\\mingw\\bin;h:\\openserver\\modules\\git\\cmd;h:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '21984'
+    'REDIRECT_URL' => '/reservations/index-inexistent'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/reservations/index-inexistent'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507308930.426
+    'REQUEST_TIME' => 1507308930
+    'argv' => []
+    'argc' => 0
+]
+2017-10-06 19:56:36 [127.0.0.1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:91
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(74): yii\filters\auth\AuthMethod->handleFailure(Object(api\components\ApiResponse))
+#1 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#7 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#8 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#9 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('customers/index', Array)
+#10 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#12 {main}
+2017-10-06 19:56:36 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_POSTMAN_TOKEN' => '6b1f6053-3b7f-ec21-4649-96f5b5ae986e'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'PATH' => 'h:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;h:\\openserver\\modules\\php\\PHP-7.0-x64;h:\\openserver\\modules\\imagemagick;h:\\openserver\\modules\\wget\\bin;h:\\openserver\\modules\\git;h:\\openserver\\modules\\git\\bin;h:\\openserver\\modules\\git\\mingw\\bin;h:\\openserver\\modules\\git\\cmd;h:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '21987'
+    'REDIRECT_URL' => '/customers/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/customers/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507308996.321
+    'REQUEST_TIME' => 1507308996
+    'argv' => []
+    'argc' => 0
+]
+2017-10-06 20:49:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#1 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2017-10-06 20:49:02 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_POSTMAN_TOKEN' => '662f478b-5a02-eec9-c2bb-6cf5a8650f17'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'PATH' => 'h:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;h:\\openserver\\modules\\php\\PHP-7.0-x64;h:\\openserver\\modules\\imagemagick;h:\\openserver\\modules\\wget\\bin;h:\\openserver\\modules\\git;h:\\openserver\\modules\\git\\bin;h:\\openserver\\modules\\git\\mingw\\bin;h:\\openserver\\modules\\git\\cmd;h:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '22061'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507312142.605
+    'REQUEST_TIME' => 1507312142
+    'argv' => []
+    'argc' => 0
+]
+2017-10-06 20:50:31 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#1 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 H:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 H:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#2 {main}
+2017-10-06 20:50:31 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_POSTMAN_TOKEN' => '13fe1e26-f184-cb90-5d04-b28902dddf25'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'PATH' => 'h:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;h:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;h:\\openserver\\modules\\php\\PHP-7.0-x64;h:\\openserver\\modules\\imagemagick;h:\\openserver\\modules\\wget\\bin;h:\\openserver\\modules\\git;h:\\openserver\\modules\\git\\bin;h:\\openserver\\modules\\git\\mingw\\bin;h:\\openserver\\modules\\git\\cmd;h:\\openserver\\modules\\database\\MySQL-5.7-x64\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;h:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '22064'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507312231.091
+    'REQUEST_TIME' => 1507312231
+    'argv' => []
+    'argc' => 0
+]
