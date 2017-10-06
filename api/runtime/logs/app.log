@@ -1099,3 +1099,502 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2017-10-06 11:18:38 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('')
+#6 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('')
+#7 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#8 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#10 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#11 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one(NULL)
+#12 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#13 D:\OpenServer\domains\yiiadv\api\controllers\UsersController.php(35): yii\db\BaseActiveRecord::findOne(Array)
+#14 [internal function]: api\controllers\UsersController->actionLogin('', '')
+#15 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#18 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('users/login', Array)
+#19 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 D:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#21 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('')
+#4 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('')
+#5 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#6 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#8 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#9 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one(NULL)
+#10 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#11 D:\OpenServer\domains\yiiadv\api\controllers\UsersController.php(35): yii\db\BaseActiveRecord::findOne(Array)
+#12 [internal function]: api\controllers\UsersController->actionLogin('', '')
+#13 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#16 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('users/login', Array)
+#17 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#19 {main}
+Additional Information:
+
+2017-10-06 11:18:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => ''
+    'passwordHash' => ''
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;d:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;d:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;d:\\openserver\\modules\\php\\PHP-7.0-x64;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6-x64\\bin;d:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;d:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '1929'
+    'REDIRECT_URL' => '/users/login'
+    'REDIRECT_QUERY_STRING' => 'username=&passwordHash='
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=&passwordHash='
+    'REQUEST_URI' => '/users/login?username=&passwordHash='
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507277918.571
+    'REQUEST_TIME' => 1507277918
+    'argv' => [
+        0 => 'username=&passwordHash='
+    ]
+    'argc' => 1
+]
+2017-10-06 11:29:50 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('')
+#6 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('')
+#7 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#8 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#10 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#11 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one(NULL)
+#12 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#13 D:\OpenServer\domains\yiiadv\api\controllers\UsersController.php(35): yii\db\BaseActiveRecord::findOne(Array)
+#14 [internal function]: api\controllers\UsersController->actionLogin('', '')
+#15 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#18 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('users/login', Array)
+#19 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 D:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#21 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('')
+#4 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('')
+#5 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#6 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#8 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#9 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one(NULL)
+#10 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#11 D:\OpenServer\domains\yiiadv\api\controllers\UsersController.php(35): yii\db\BaseActiveRecord::findOne(Array)
+#12 [internal function]: api\controllers\UsersController->actionLogin('', '')
+#13 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#16 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('users/login', Array)
+#17 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#19 {main}
+Additional Information:
+
+2017-10-06 11:29:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => ''
+    'passwordHash' => ''
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;d:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;d:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;d:\\openserver\\modules\\php\\PHP-7.0-x64;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6-x64\\bin;d:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;d:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '2931'
+    'REDIRECT_URL' => '/users/login'
+    'REDIRECT_QUERY_STRING' => 'username=&passwordHash='
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=&passwordHash='
+    'REQUEST_URI' => '/users/login?username=&passwordHash='
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507278590.427
+    'REQUEST_TIME' => 1507278590
+    'argv' => [
+        0 => 'username=&passwordHash='
+    ]
+    'argc' => 1
+]
+2017-10-06 11:29:53 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('')
+#6 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('')
+#7 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#8 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#10 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#11 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one(NULL)
+#12 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#13 D:\OpenServer\domains\yiiadv\api\controllers\UsersController.php(35): yii\db\BaseActiveRecord::findOne(Array)
+#14 [internal function]: api\controllers\UsersController->actionLogin('', '')
+#15 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#18 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('users/login', Array)
+#19 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 D:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#21 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('')
+#4 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('')
+#5 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#6 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#8 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#9 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one(NULL)
+#10 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#11 D:\OpenServer\domains\yiiadv\api\controllers\UsersController.php(35): yii\db\BaseActiveRecord::findOne(Array)
+#12 [internal function]: api\controllers\UsersController->actionLogin('', '')
+#13 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#16 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('users/login', Array)
+#17 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#19 {main}
+Additional Information:
+
+2017-10-06 11:29:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => ''
+    'passwordHash' => ''
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;d:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;d:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;d:\\openserver\\modules\\php\\PHP-7.0-x64;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6-x64\\bin;d:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;d:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '2933'
+    'REDIRECT_URL' => '/users/login'
+    'REDIRECT_QUERY_STRING' => 'username=&passwordHash='
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=&passwordHash='
+    'REQUEST_URI' => '/users/login?username=&passwordHash='
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507278593.889
+    'REQUEST_TIME' => 1507278593
+    'argv' => [
+        0 => 'username=&passwordHash='
+    ]
+    'argc' => 1
+]
+2017-10-06 11:30:17 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('')
+#6 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('')
+#7 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#8 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#10 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#11 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one(NULL)
+#12 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#13 D:\OpenServer\domains\yiiadv\api\controllers\UsersController.php(35): yii\db\BaseActiveRecord::findOne(Array)
+#14 [internal function]: api\controllers\UsersController->actionLogin('', '')
+#15 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#18 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('users/login', Array)
+#19 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 D:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#21 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('')
+#4 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('')
+#5 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#6 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#8 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#9 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one(NULL)
+#10 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#11 D:\OpenServer\domains\yiiadv\api\controllers\UsersController.php(35): yii\db\BaseActiveRecord::findOne(Array)
+#12 [internal function]: api\controllers\UsersController->actionLogin('', '')
+#13 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#16 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('users/login', Array)
+#17 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#19 {main}
+Additional Information:
+
+2017-10-06 11:30:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => ''
+    'passwordHash' => ''
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;d:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;d:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;d:\\openserver\\modules\\php\\PHP-7.0-x64;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6-x64\\bin;d:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;d:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '2942'
+    'REDIRECT_URL' => '/users/login'
+    'REDIRECT_QUERY_STRING' => 'username=&passwordHash='
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=&passwordHash='
+    'REQUEST_URI' => '/users/login?username=&passwordHash='
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507278617.3
+    'REQUEST_TIME' => 1507278617
+    'argv' => [
+        0 => 'username=&passwordHash='
+    ]
+    'argc' => 1
+]
+2017-10-06 11:30:20 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('')
+#6 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('')
+#7 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#8 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#10 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#11 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one(NULL)
+#12 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#13 D:\OpenServer\domains\yiiadv\api\controllers\UsersController.php(35): yii\db\BaseActiveRecord::findOne(Array)
+#14 [internal function]: api\controllers\UsersController->actionLogin('', '')
+#15 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#18 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('users/login', Array)
+#19 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 D:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#21 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('')
+#4 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('')
+#5 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(866): yii\db\Command->getRawSql()
+#6 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(887): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#8 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#9 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one(NULL)
+#10 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#11 D:\OpenServer\domains\yiiadv\api\controllers\UsersController.php(35): yii\db\BaseActiveRecord::findOne(Array)
+#12 [internal function]: api\controllers\UsersController->actionLogin('', '')
+#13 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#15 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#16 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('users/login', Array)
+#17 D:\OpenServer\domains\yiiadv\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\OpenServer\domains\yiiadv\api\web\index.php(19): yii\base\Application->run()
+#19 {main}
+Additional Information:
+
+2017-10-06 11:30:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'username' => ''
+    'passwordHash' => ''
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yiiadv.rest'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.8,en;q=0.6'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-7.0-x64\\ext;d:\\openserver\\modules\\php\\PHP-7.0-x64\\pear;d:\\openserver\\modules\\php\\PHP-7.0-x64\\pear\\bin;d:\\openserver\\modules\\php\\PHP-7.0-x64;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6-x64\\bin;d:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10\\bin;d:\\openserver\\modules\\http\\Apache-PHP-7-x64+Nginx-1.10;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'yiiadv.rest'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/yiiadv/api/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/yiiadv/api/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/yiiadv/api/web/index.php'
+    'REMOTE_PORT' => '2945'
+    'REDIRECT_URL' => '/users/login'
+    'REDIRECT_QUERY_STRING' => 'username=&passwordHash='
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'username=&passwordHash='
+    'REQUEST_URI' => '/users/login?username=&passwordHash='
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1507278620.227
+    'REQUEST_TIME' => 1507278620
+    'argv' => [
+        0 => 'username=&passwordHash='
+    ]
+    'argc' => 1
+]
